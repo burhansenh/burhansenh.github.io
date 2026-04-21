@@ -13,7 +13,7 @@ body {
   background: #fafaf7;
   max-width: 680px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 4rem 1.5rem;
 }
 
 a {
@@ -26,58 +26,142 @@ a:hover {
   text-decoration: none;
 }
 
-header {
-  margin-bottom: 3rem;
+/* Landing page */
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
 }
 
-header h1 {
-  font-size: 1.8rem;
+.landing main {
+  width: 100%;
+}
+
+.landing h1 {
+  font-size: 2.4rem;
   font-weight: 700;
-  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
 }
 
-header p {
-  color: #555;
-}
-
-section {
-  margin-bottom: 2.5rem;
-}
-
-h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-}
-
-h3 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-bottom: 0.4rem;
-}
-
-article {
+.landing p {
   margin-bottom: 1.5rem;
 }
 
-article p {
-  margin-bottom: 0.5rem;
+.link-row {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
 }
 
+.link-row a {
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.link-row a:hover {
+  text-decoration: underline;
+}
+
+/* Back navigation */
+.back {
+  margin-bottom: 3rem;
+}
+
+.back a {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.back a:hover {
+  text-decoration: underline;
+}
+
+/* Page headings */
+main > h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Section headings */
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  color: #888;
+}
+
+/* Prose */
+main > p {
+  margin-bottom: 1.2rem;
+}
+
+.note {
+  color: #777;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Work list */
+.work-list {
+  list-style: none;
+}
+
+.work-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.work-list li:first-child {
+  border-top: 1px solid #eee;
+}
+
+.work-list a {
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.work-list a:hover {
+  text-decoration: underline;
+}
+
+.meta {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+/* Footer */
 footer {
-  margin-top: 3rem;
+  margin-top: 4rem;
   padding-top: 1.5rem;
   border-top: 1px solid #ddd;
   font-size: 0.85rem;
-  color: #777;
+  color: #999;
 }
 
 @media (max-width: 600px) {
-  body {
-    padding: 2rem 1rem;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-  }
+  body { padding: 2.5rem 1rem; }
+  .landing h1 { font-size: 1.8rem; }
+  main > h1 { font-size: 1.5rem; }
+  .link-row { gap: 0.8rem; }
 }
