@@ -11,176 +11,226 @@ body {
   line-height: 1.6;
   color: #1a1a1a;
   background: #fafaf7;
-  max-width: 680px;
+}
+
+.container {
+  max-width: 700px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 0 1.5rem;
 }
 
 a {
   color: #8b2500;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
+  text-decoration: none;
 }
 
 a:hover {
+  text-decoration: underline;
+}
+
+/* ── Site header / nav ── */
+.site-header {
+  padding: 2rem 0 0;
+  margin-bottom: 4rem;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.site-header .name a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
   text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.site-header .name a:hover {
+  color: #8b2500;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.site-nav a {
+  font-size: 0.88rem;
+  color: #666;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: #1a1a1a;
+}
+
+.site-nav a.active {
+  color: #1a1a1a;
+  font-weight: 500;
 }
 
 /* ── Landing page ── */
 .landing {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   min-height: 100vh;
-  padding: 2rem 1.5rem;
 }
 
-.landing main {
-  width: 100%;
+.landing .site-header {
+  margin-bottom: 0;
 }
 
-.landing h1 {
-  font-size: 2.6rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  margin-bottom: 1.2rem;
-}
-
-.landing > main > p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  margin-bottom: 2rem;
-  color: #333;
-}
-
-.link-row {
-  list-style: none;
+.hero {
+  flex: 1;
   display: flex;
+  align-items: center;
+}
+
+.hero-inner {
+  padding: 2rem 0 4rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #333;
+  max-width: 560px;
+}
+
+.hero .links {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
   flex-wrap: wrap;
-  gap: 0.4rem 1.4rem;
 }
 
-.link-row a {
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-}
-
-.link-row a:hover {
-  text-decoration: underline;
-}
-
-/* ── Back navigation ── */
-.back {
-  margin-bottom: 2.5rem;
-}
-
-.back a {
+.hero .links a {
   font-size: 0.9rem;
-  text-decoration: none;
-  color: #777;
+  color: #666;
 }
 
-.back a:hover {
+.hero .links a:hover {
   color: #8b2500;
 }
 
-/* ── Page headings ── */
-main > h1 {
-  font-size: 1.8rem;
+/* ── Page layout ── */
+.page {
+  padding-bottom: 4rem;
+}
+
+.page main {
+  min-height: 60vh;
+}
+
+.page-title {
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   margin-bottom: 0.3rem;
 }
 
-.subtitle {
+.page-subtitle {
+  font-size: 0.92rem;
   color: #666;
-  font-size: 0.9rem;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.2rem;
 }
 
-.intro {
+.page-intro {
   color: #555;
-  margin-bottom: 2rem;
-}
-
-/* ── Section headings ── */
-h2 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.8rem;
-  color: #888;
+  margin-bottom: 2.5rem;
 }
 
 /* ── Prose ── */
-main > p {
-  margin-bottom: 1.2rem;
+.prose p {
+  margin-bottom: 1.3rem;
+  line-height: 1.7;
 }
 
-.note {
+.prose h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #999;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose .note {
   color: #888;
   font-size: 0.88rem;
   font-style: italic;
 }
 
-.status {
+.prose .status {
   color: #888;
   font-size: 0.88rem;
-  margin-top: 0.5rem;
 }
 
 /* ── Work history ── */
 .role {
-  margin-bottom: 2.5rem;
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 2.8rem;
 }
 
-.role:last-of-type {
-  border-bottom: none;
-  padding-bottom: 0;
+.role-header {
+  margin-bottom: 0.9rem;
+  border-left: 3px solid #8b2500;
+  padding-left: 1rem;
 }
 
-.role h2 {
-  text-transform: none;
-  letter-spacing: normal;
-  font-size: 1.15rem;
+.role-title {
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #1a1a1a;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.05rem;
 }
 
-.role .org {
-  font-weight: 500;
+.role-org {
+  font-size: 0.95rem;
   color: #444;
-  margin-bottom: 0.1rem;
 }
 
-.role .dates {
-  font-size: 0.85rem;
-  color: #888;
-  margin-bottom: 0.8rem;
+.role-dates {
+  font-size: 0.82rem;
+  color: #999;
 }
 
 .role ul {
   list-style: none;
-  padding: 0;
+  padding-left: 1rem;
+  border-left: 3px solid transparent;
 }
 
 .role li {
   position: relative;
-  padding-left: 1rem;
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
-  line-height: 1.55;
+  padding-left: 1.1rem;
+  margin-bottom: 0.55rem;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: #333;
 }
 
 .role li::before {
-  content: "–";
+  content: "";
   position: absolute;
   left: 0;
-  color: #bbb;
+  top: 0.65em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ccc;
 }
 
 /* ── Project list (portfolio) ── */
@@ -189,54 +239,56 @@ main > p {
 }
 
 .project-list li {
-  padding: 1.2rem 0;
-  border-bottom: 1px solid #eee;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .project-list li:first-child {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #eaeaea;
 }
 
-.project-list a {
+.project-list .project-title {
   font-weight: 600;
   font-size: 1.05rem;
-  text-decoration: none;
   display: block;
-  margin-bottom: 0.1rem;
-}
-
-.project-list a:hover {
-  text-decoration: underline;
+  margin-bottom: 0.15rem;
 }
 
 .project-list .meta {
   font-size: 0.82rem;
-  color: #888;
-  margin-bottom: 0.4rem;
+  color: #999;
   display: block;
+  margin-bottom: 0.5rem;
 }
 
 .project-list p {
-  font-size: 0.92rem;
+  font-size: 0.93rem;
   color: #555;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
 }
 
 /* ── Footer ── */
-footer {
-  margin-top: 4rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #e0e0e0;
-  font-size: 0.82rem;
-  color: #aaa;
+.site-footer {
+  margin-top: 5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid #e8e8e8;
+}
+
+.site-footer p {
+  font-size: 0.8rem;
+  color: #bbb;
 }
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
-  body { padding: 2.5rem 1rem; }
-  .landing h1 { font-size: 2rem; }
-  main > h1 { font-size: 1.5rem; }
-  .link-row { gap: 0.3rem 1rem; }
-  .role li { font-size: 0.9rem; }
+  .site-header .container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .site-nav { gap: 1.2rem; }
+  .hero h1 { font-size: 2rem; }
+  .page-title { font-size: 1.6rem; }
+  .container { padding: 0 1.2rem; }
 }

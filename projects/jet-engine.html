@@ -6,12 +6,21 @@
   <title>Jet Engine Controller &mdash; Burhan Senh</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
-  <nav class="back"><a href="../portfolio.html">&larr; Portfolio</a></nav>
+<body class="page">
+  <header class="site-header">
+    <div class="container">
+      <div class="name"><a href="../index.html">Burhan Senh</a></div>
+      <nav class="site-nav">
+        <a href="../work.html">Work</a>
+        <a href="../portfolio.html">Portfolio</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </div>
+  </header>
 
-  <main>
-    <h1>Jet Engine Controller</h1>
-    <p class="subtitle">Personal project &middot; 2026</p>
+  <main class="container prose">
+    <h1 class="page-title">Jet Engine Controller</h1>
+    <p class="page-subtitle">Personal project &middot; 2026</p>
 
     <p>Bare-metal C firmware for controlling a jet engine on an RC vehicle. The architecture is state-first: a finite state machine acts as the gatekeeper for every action the system can take. This is the same design discipline used in safety-critical systems, applied here at a smaller scale.</p>
 
@@ -20,8 +29,10 @@
     <p class="status">Status: In progress</p>
   </main>
 
-  <footer>
-    <p>Burhan Senh &mdash; 2026</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>Burhan Senh &mdash; 2026</p>
+    </div>
   </footer>
 </body>
 </html>
