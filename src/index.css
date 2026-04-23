@@ -370,6 +370,11 @@ a:hover {
   display: block;
 }
 
+.project-hero-contain img {
+  max-height: none;
+  object-fit: contain;
+}
+
 .project-hero figcaption {
   font-size: 0.78rem;
   color: #8a8472;

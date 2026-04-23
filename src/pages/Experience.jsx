@@ -17,19 +17,20 @@ export default function Experience() {
           disclosed. My primary focus was the long linear drive (LLD) subsystem,
           which positions the detector heads along the gantry rail. I wrote and
           refactored C/C++ motor control firmware for the LLD linear brakes,
-          working with stepper and servo motor drivers, encoder feedback for
-          position tracking, and brake actuation logic that coordinates with the
-          gantry motion controller. The firmware runs under RTOS with
+          working with motor drivers, brake actuation logic, and coordination
+          with the gantry motion controller. The firmware runs under RTOS with
           communication over CAN bus for real time motor commands and TCP/IP for
           configuration and diagnostics from the host workstation.
         </p>
         <p className="entry-desc">
-          I owned defect resolution across the motion control stack, tracing
-          issues from application layer commands down through the motor driver
-          interface. I also spent significant time on testing: writing and
-          executing integration tests, regression suites, and subsystem
-          integration tests on bench hardware to validate firmware changes
-          before they went out to hospital installations.
+          I automated testing scripts using C# and worked on internal tooling
+          including our host emulator tool, where I incorporated automated
+          backup and restore functionality. I owned defect resolution across the
+          motion control stack, tracing issues from application layer commands
+          down through the motor driver interface. I also wrote and executed
+          integration tests and validation suites for various defects and
+          engineering change orders (ECOs) on bench hardware before changes went
+          out to hospital installations.
         </p>
       </section>
 
@@ -49,19 +50,17 @@ export default function Experience() {
         </div>
         <p className="entry-desc">
           Research in the Center for Automotive Vehicle Electronics and Security
-          (CAVES) lab on embedded motor control for electric vehicle drivetrains.
-          I write bare metal firmware on the TI F280025C C2000 microcontroller to
-          drive a three phase inverter. The work involves configuring peripherals
-          at the register level: ADC modules for phase current sensing with
-          synchronized sampling, ePWM for complementary gate drive signals with
-          dead time insertion, DMA for moving ADC results without CPU
-          intervention, and SCI/UART for serial communication with the host PC.
+          (CAVES) lab, working alongside a PhD student on embedded motor control
+          for electric vehicle drivetrains. I assisted in configuring embedded
+          motor control software using the TI F280025C C2000 real time
+          microcontroller and completed TI C2000 labs on ADC, ePWM, DMA, and
+          SCI/UART based communication interfaces.
         </p>
         <p className="entry-desc">
-          I validate inverter switching behavior and motor control algorithms on
-          the bench using an oscilloscope to verify PWM timing, current
-          waveforms, and gate drive signals before anything runs on an actual EV
-          powertrain.
+          I contributed to validation of three phase inverter and EV motor
+          control behavior in software before hardware testing by configuring
+          peripherals and examining PWM and ADC signals for real time embedded
+          debugging on the bench using an oscilloscope.
         </p>
       </section>
 
@@ -74,13 +73,14 @@ export default function Experience() {
           <figcaption>Containerized edge data center concept</figcaption>
         </figure>
         <p className="entry-desc">
-          Defined the firmware and networking requirements for DAIODE, a solar
-          powered edge AI data center built inside a shipping container. I
-          designed the network topology using a leaf spine architecture with
-          Cisco Nexus 9300 switches, spec'd the compute nodes (Dell PowerEdge
-          R760 servers with NVIDIA A100 GPUs), and worked through the full
-          infrastructure stack from power distribution and cooling to Fortinet
-          firewall placement and WAN uplink through a Catalyst 8300 router.
+          Defined the networking requirements for DAIODE, a solar powered edge
+          AI data center built inside a shipping container. I designed the
+          network topology using a leaf spine architecture with Cisco Nexus 9300
+          switches, spec'd the compute nodes (Dell PowerEdge R760 servers with
+          NVIDIA A100 GPUs), and worked through the full infrastructure stack
+          from power distribution and cooling to Fortinet firewall placement and
+          WAN uplink through a Catalyst 8300 router. I also organized meetings
+          with vendors to discuss project fit and evaluate hardware options.
         </p>
       </section>
 
