@@ -50,13 +50,13 @@ export default function JetEngine() {
 
       <div className="section-row reverse">
         <div className="section-text">
-          <h3>Ignition Attempt</h3>
+          <h3>Starter Spool Verification</h3>
           <p>
-            This clip shows an ignition attempt with propane flowing into the
-            combustion chamber while the starter motor spools the turbine. The
-            glow plug is energized to ignite the fuel air mixture. The goal is
-            to get the EGT high enough for self sustaining combustion, at which
-            point kerosene takes over from propane as the primary fuel.
+            This clip verifies the starter motor spools the turbine up as
+            expected. The ECU commands the starter at the configured power
+            level and we confirm the compressor reaches the target RPM. This
+            is a key validation step before attempting the full ignition
+            sequence.
           </p>
         </div>
         <div className="section-media">
@@ -64,7 +64,7 @@ export default function JetEngine() {
             <video controls width="100%" playsInline>
               <source src="/images/jet-engine/jet-engine-ignition.mp4" type="video/mp4" />
             </video>
-            <figcaption>Ignition attempt with propane and glow plug</figcaption>
+            <figcaption>Verifying starter motor spools the turbine correctly</figcaption>
           </figure>
         </div>
       </div>

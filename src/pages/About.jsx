@@ -8,19 +8,15 @@ export default function About() {
       </figure>
 
       <p>
-        I am a computer engineering student at Illinois Institute of Technology,
-        graduating December 2027. I love writing code that makes physical things
-        move — motor controllers, robotic arms, jet engines. Most of my work
-        lives at the boundary between firmware and hardware, where the software
-        has to deal with real sensors, real actuators, and real timing constraints.
+        I am a computer engineering student at Illinois Tech, graduating December 2027.
+        I love working at the intersection of software and hardware, I found this
+        passion of mine through robotics.
       </p>
 
       <p>
-        At Siemens Healthineers I write motion control firmware for medical
-        imaging scanners, and at the University of Akron's CAVES Lab I work on
-        embedded motor control for EV drivetrains. On my own time I build
-        projects like a teleoperated robot arm trained with imitation learning
-        and a custom ECU for a miniature turbojet.
+        At Siemens I am a Co Op on the firmware team working on motion control 
+        of medical imaging scanners. I also enjoy building projects! My favorites
+        are an AI robotic arm and a jet engine rc car.
       </p>
 
       <p>
